@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/cronometro.css" rel="stylesheet" />
+<link href="~/css/flow.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="reloj" id="Horas">00</div>
+        <div class="reloj" id="Minutos">:00</div>
+        <div class="reloj" id="Segundos">:00</div>
+        <div class="reloj" id="Centesimas">:00</div>
+        <div class="reloj">
+            <p class="nivel-actual">&nbsp;Nivel 1/10</p>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="grid"></div>
+    </div>
+</div>
+<br />
+<br />
+<script src="~/js/flow.js"></script>
+
