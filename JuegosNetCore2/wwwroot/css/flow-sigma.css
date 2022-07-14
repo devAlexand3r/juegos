@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.grid {
+    width: 30em;
+    height: 30em;
+    overflow: hidden;
+    background: black;
+    /*position: absolute;*/
+    top: 55vh;
+    /*margin-top: -50vmin;*/
+    margin-top: 16px;
+    left: 50vw;
+    /*margin-left: -50vmin;*/
+    border: 1px solid #7F7042;
+    box-sizing: border-box;
+}
+
+    .grid > div {
+        box-sizing: border-box;
+        float: left;
+        border: 1px solid #7F7042;
+        position: relative;
+        background-image: radial-gradient(ellipse at center, transparent 0%, transparent 20.5%, #000 21.484374%);
+        height: calc(100% / var(--size));
+        width: calc(100% / var(--size));
+        text-align: center !important;
+    }
+
+        .grid > div[data-completed="true"] {
+            background-image: radial-gradient(ellipse at center, transparent 0%, transparent 20.5%, rgba(0, 0, 0, .8) 21.484374%);
+        }
+
+    .grid[data-size="2"] > div {
+        --size: 2;
+    }
+
+    .grid[data-size="3"] > div {
+        --size: 3;
+    }
+
+    .grid[data-size="4"] > div {
+        --size: 4;
+    }
+
+    .grid[data-size="5"] > div {
+        --size: 5;
+    }
+
+    .grid[data-size="6"] > div {
+        --size: 6;
+    }
+
+    .grid[data-size="7"] > div {
+        --size: 7;
+    }
+
+    .grid[data-size="8"] > div {
+        --size: 8;
+    }
+
+    .grid[data-size="9"] > div {
+        --size: 9;
+    }
+
+    .grid[data-size="10"] > div {
+        --size: 10;
+    }
+
+    .grid[data-size="11"] > div {
+        --size: 11;
+    }
+
+    .grid[data-size="12"] > div {
+        --size: 12;
+    }
+
+    .grid[data-size="13"] > div {
+        --size: 13;
+    }
+
+    .grid[data-size="14"] > div {
+        --size: 14;
+    }
+
+    .grid[data-size="15"] > div {
+        --size: 15;
+    }
+
+    .grid[data-size="16"] > div {
+        --size: 16;
+    }
+
+    .grid[data-size="17"] > div {
+        --size: 17;
+    }
+
+    .grid[data-size="18"] > div {
+        --size: 18;
+    }
+
+    .grid[data-size="19"] > div {
+        --size: 19;
+    }
+
+    .grid[data-size="20"] > div {
+        --size: 20;
+    }
+
+    .grid > div[data-point="true"] {
+        background-image: radial-gradient(ellipse at center, transparent 0%, transparent 49.5%, #000 50%);
+    }
+
+        .grid > div[data-point="true"][data-completed="true"] {
+            /*background-image: radial-gradient(ellipse at center, transparent 0%, transparent 49.5%, rgba(0, 0, 0, .8) 50%);*/
+        }
+
+    .grid > div:after,
+    .grid > div:before {
+        content: '';
+        background-color: inherit;
+        display: block;
+        position: absolute;
+    }
+
+    .grid > div[data-t]:before {
+        width: 30%;
+        height: 50%;
+        left: 35%;
+        top: -1px;
+    }
+
+    .grid > div[data-b]:before {
+        width: 30%;
+        height: 50%;
+        left: 35%;
+        bottom: -1px;
+    }
+
+    .grid > div[data-l]:before {
+        width: 50%;
+        height: 30%;
+        left: -1px;
+        top: 35%;
+    }
+
+    .grid > div[data-r]:before {
+        width: 50%;
+        height: 30%;
+        right: -1px;
+        top: 35%;
+    }
+
+    .grid > div[data-t][data-b]:before {
+        width: 30%;
+        height: calc(100% + 2px);
+        left: 35%;
+        top: -1px;
+    }
+
+    .grid > div[data-l][data-r]:before {
+        width: calc(100% + 2px);
+        height: 30%;
+        left: -1px;
+        top: 35%;
+    }
+
+    .grid > div[data-t][data-l]:before {
+        width: 30%;
+        height: 50%;
+        left: 35%;
+        top: -1px;
+    }
+
+    .grid > div[data-t][data-l]:after {
+        width: 50%;
+        height: 30%;
+        left: -1px;
+        top: 35%;
+    }
+
+    .grid > div[data-t][data-r]:before {
+        width: 30%;
+        height: 50%;
+        left: 35%;
+        top: -1px;
+    }
+
+    .grid > div[data-t][data-r]:after {
+        width: 50%;
+        height: 30%;
+        right: -1px;
+        top: 35%;
+    }
+
+    .grid > div[data-b][data-l]:before {
+        width: 30%;
+        height: 50%;
+        left: 35%;
+        top: auto;
+        bottom: -1px;
+    }
+
+    .grid > div[data-b][data-l]:after {
+        width: 50%;
+        height: 30%;
+        left: -1px;
+        top: 35%;
+    }
+
+    .grid > div[data-b][data-r]:before {
+        width: 30%;
+        height: 50%;
+        left: 35%;
+        top: auto;
+        bottom: -1px;
+    }
+
+    .grid > div[data-b][data-r]:after {
+        width: 50%;
+        height: 30%;
+        right: -1px;
+        top: 35%;
+    }
+
+    .grid > div[data-id="1"],
+    .grid > div[data-id="2"],
+    .grid > div[data-id="3"],
+    .grid > div[data-id="4"],
+    .grid > div[data-id="5"],
+    .grid > div[data-id="6"],
+    .grid > div[data-id="7"],
+    .grid > div[data-id="8"],
+    .grid > div[data-id="9"],
+    .grid > div[data-id="10"],
+    .grid > div[data-id="11"],
+    .grid > div[data-id="12"],
+    .grid > div[data-id="13"],
+    .grid > div[data-id="14"],
+    .grid > div[data-id="15"],
+    .grid > div[data-id="16"] {
+        background-repeat: no-repeat;
+        background-position: center !important;
+        background-size: 100% !important;
+    }
+
+    .grid > div[data-id="1"] {
+        background-image: url(..//images/flow-free/sigma/FE6F61.jpg);
+        /*border: 1px solid #FE6F61;*/
+    }
+
+    .grid > div[data-id="1x1"] {
+        background-color: #FE6F61;
+    }
+
+    .grid > div[data-id="2"] {
+        background-image: url(..//images/flow-free/sigma/9ECF7D.jpg);
+        /*border: 1px solid #9ECF7D;*/
+    }
+
+    .grid > div[data-id="2x2"] {
+        background-color: #9ECF7D;
+    }
+
+    .grid > div[data-id="3"] {
+        background-image: url(..//images/flow-free/sigma/191562.jpg);
+        /*border: 1px solid #191562;*/
+    }
+
+    .grid > div[data-id="3x3"] {
+        background-color: #191562;
+    }
+
+    .grid > div[data-id="4"] {
+        background-image: url(..//images/flow-free/sigma/F2C63C.jpg);
+        /*border: 1px solid #F2C63C;*/
+    }
+
+    .grid > div[data-id="4x4"] {
+        background-color: #F2C63C;
+    }
+
+    .grid > div[data-id="5"] {
+        background-image: url(..//images/flow-free/sigma/322536.jpg);
+        /*border: 1px solid #322536;*/
+    }
+
+    .grid > div[data-id="5x5"] {
+        background-color: #322536;
+    }
+
+    .grid > div[data-id="6"] {
+        background-image: url(..//images/flow-free/sigma/00BCEC.jpg);
+        /*border: 1px solid #00BCEC;*/
+    }
+
+    .grid > div[data-id="6x6"] {
+        background-color: #00BCEC;
+    }
+
+    .grid > div[data-id="7"] {
+        background-image: url(..//images/flow-free/sigma/FF4C86.jpg);
+    }
+
+    .grid > div[data-id="7x7"] {
+        background-color: #FF4C86;
+    }
+
+    .grid > div[data-id="8"] {
+        background-image: url(..//images/flow-free/sigma/491C07.jpg);
+    }
+
+    .grid > div[data-id="8x8"] {
+        background-color: #491C07;
+    }
+
+    .grid > div[data-id="9"] {
+        background-image: url(..//images/flow-free/sigma/F67C53.jpg);
+    }
+
+    .grid > div[data-id="9x9"] {
+        background-color: #F67C53;
+    }
+
+    .grid > div[data-id="10"] {
+        background-image: url(..//images/flow-free/sigma/F69495.jpg);
+    }
+
+    .grid > div[data-id="10x10"] {
+        background-color: #F69495;
+    }
+
+    .grid > div[data-id="11"] {
+        background-image: url(..//images/flow-free/sigma/7E26BB.jpg);
+    }
+
+    .grid > div[data-id="11x11"] {
+        background-color: #7E26BB;
+    }
+
+    .grid > div[data-id="12"] {
+        background-image: url(..//images/flow-free/sigma/843182.jpg);
+    }
+
+    .grid > div[data-id="12x12"] {
+        background-color: #843182;
+    }
+
+    .grid > div[data-id="13"] {
+        background-image: url(..//images/flow-free/sigma/FF9468.jpg);
+    }
+
+    .grid > div[data-id="13x13"] {
+        background-color: #FF9468;
+    }
+
+    .grid > div[data-id="14"] {
+        background-image: url(..//images/flow-free/sigma/283480.jpg);
+    }
+
+    .grid > div[data-id="14x14"] {
+        background-color: #283480;
+    }
+
+    .grid > div[data-id="15"] {
+        background-image: url(..//images/flow-free/sigma/30020D.jpg);
+    }
+
+    .grid > div[data-id="15x15"] {
+        background-color: #30020D;
+    }
+
+    .grid > div[data-id="16"] {
+        background-image: url(..//images/flow-free/sigma/8FC333.jpg);
+    }
+
+    .grid > div[data-id="16x16"] {
+        background-color: #8FC333;
+    }

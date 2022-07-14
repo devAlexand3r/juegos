@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Tetris";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 id="puntaje">Puntaje: 0</h3>
+            </div>
+            <div class="col-12 text-center">
+                <canvas id="canvas"></canvas>
+                <div class="mt-2">
+                    <button id="btnIniciar" class="btn btn-success">
+                        <i class="fa fa-play"></i>
+                    </button>
+                    <button id="btnIzquierda" class="btn btn-success">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button id="btnAbajo" class="btn btn-success">
+                        <i class="fa fa-arrow-down"></i>
+                    </button>
+                    <button id="btnDerecha" class="btn btn-success">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                    <button id="btnRotar" class="btn btn-success">
+                        <i class="fa fa-undo"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="~/tetris/js/sweetalert2.min.js"></script>
+<script src="~/tetris/js/tetris.js"></script>
